@@ -1,8 +1,7 @@
 #include<stdio.h>
-#include<math.h>
-int main()
+
+void position_set_bit(int num)
 {
-    int num = 12;
     int pos = 0;
     while(num>0)
     {
@@ -13,5 +12,11 @@ int main()
         pos++;
         num = num>>1;
     }
+}
+
+int main()
+{
+    int num = 12;
+    position_set_bit(num);
     return 0;
 }
