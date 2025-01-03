@@ -1,8 +1,7 @@
 #include <stdio.h>
-#include <math.h>
-int main()
+
+int count_total_set(int num)
 {
-    int num = 10;
     int count = 0;
     for (int i = 1; i <= num; i++)
     {
@@ -13,6 +12,12 @@ int main()
             j = j >> 1;
         }
     }
+    return count;
+}
+int main()
+{
+    int num = 5;
+    int count = count_total_set(num);
     printf("Total no.of Set Bits = %d",count);
     return 0;
 }
