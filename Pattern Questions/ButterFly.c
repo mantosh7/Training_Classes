@@ -13,14 +13,10 @@ Problem Statement: Print Butterfly Pattern
 
 
 #include<stdio.h>
-int main()
-{
-    int n ;
-    printf("Enter no.of rows:");
-    scanf("%d",&n);
-    
-    // Upper Half
 
+void pattern(int n)
+{
+    // Upper Half
     for(int i=0;i<n-1;i++)
     {
         // 1st pyramid
@@ -67,6 +63,14 @@ int main()
         }
         printf("\n");
     }
+}
+
+int main()
+{
+    int n ;
+    printf("Enter no.of rows:");
+    scanf("%d",&n);
     
+    pattern(n); 
     return 0;
 }
