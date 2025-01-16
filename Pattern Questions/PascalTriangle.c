@@ -22,12 +22,9 @@ int comb(int i,int j)
     return x;
 }
 
-int main()
+void pattern(int n)
 {
-    int n,x;
-    printf("Enter no.of rows:");
-    scanf("%d",&n);
-
+    int x;
     for(int i=0;i<n;i++)
     {
         for(int j=0;j<n-1-i;j++)
@@ -41,6 +38,16 @@ int main()
         }
         printf("\n");
     }
+}
+
+int main()
+{
+    int n;
+    printf("Enter no.of rows:");
+    scanf("%d",&n);
+
+    pattern(n);
+
     return 0;
 
 }
