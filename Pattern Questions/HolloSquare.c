@@ -10,13 +10,9 @@ Problem Statement: Hollow Square Pattern for n=5
 
 
 #include<stdio.h>
-int main()
+void pattern(int n)
 {
-    int n ;
-    printf("Enter no.of rows:");
-    scanf("%d",&n);
-    
-    for(int i=0;i<n;i++)
+     for(int i=0;i<n;i++)
     {
         int num = 1;
         for(int j=0;j<n;j++)
@@ -30,6 +26,15 @@ int main()
         }
         printf("\n");
     }
+}
+
+int main()
+{
+    int n ;
+    printf("Enter no.of rows:");
+    scanf("%d",&n);
+    
+   pattern(n);
     
     return 0;
 }
