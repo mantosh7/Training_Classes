@@ -13,12 +13,8 @@ Problem Statement:  Hollow Hourglass Pattern for n=5
 */
 
 #include<stdio.h>
-int main()
+void pattern(int n)
 {
-    int n;
-    printf("Enter no.of rows:");
-    scanf("%d:",&n);
-    
     int col = 2*n-1;
     
     // Upper Part
@@ -67,5 +63,15 @@ int main()
         }
         printf("\n");
     }
+}
+
+int main()
+{
+    int n;
+    printf("Enter no.of rows:");
+    scanf("%d:",&n);
+    
+    pattern(n);
+
     return 0;
 }
