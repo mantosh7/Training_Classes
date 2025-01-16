@@ -15,12 +15,8 @@ Problem Statement:  Hourglass Pattern for n=5 n
 
 
 #include<stdio.h>
-int main()
+void pattern(int n)
 {
-    int n ;
-    printf("Enter no.of rows:");
-    scanf("%d",&n);
-    
     // Upper Part
     for(int i=0;i<n;i++)
     {
@@ -57,5 +53,14 @@ int main()
         printf("\n");
     }
     
+}
+
+int main()
+{
+    int n ;
+    printf("Enter no.of rows:");
+    scanf("%d",&n);
+    
+    pattern(n);
     return 0;
 }
