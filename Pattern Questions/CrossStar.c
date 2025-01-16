@@ -1,3 +1,17 @@
+/*
+Problem statement: Draw pattern for n=5
+
+                   *****        *****
+                     ****      ****
+                       ***    ***
+                         **  **
+                           **
+                         **  **
+                       ***    ***
+                     ****      ****
+                   *****        *****      
+*/
+
 #include<stdio.h>
 int main()
 {
