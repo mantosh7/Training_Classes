@@ -13,12 +13,9 @@ Problem statement: Draw pattern for n=5
 */
 
 #include<stdio.h>
-int main()
-{
-    int n;
-    printf("Enter no.of rows:");
-    scanf("%d",&n);
 
+void pattern(int n)
+{
     // Upper Part
     for(int i=0;i<n;i++)
     {
@@ -70,5 +67,14 @@ int main()
         }
         printf("\n");
     }
+}
+
+int main()
+{
+    int n;
+    printf("Enter no.of rows:");
+    scanf("%d",&n);
+
+    pattern(n);
     return 0;
 }
