@@ -10,12 +10,9 @@ Problem Statement: Albhabet Pattern
 
 
 #include<stdio.h>
-int main()
+
+void pattern(int n)
 {
-    int n ;
-    printf("Enter no.of rows:");
-    scanf("%d",&n);
-    
     for(int i=0;i<n;i++)
     {
         char ch = 64;
@@ -40,6 +37,13 @@ int main()
         }
         printf("\n");
     }
+}
+int main()
+{
+    int n ;
+    printf("Enter no.of rows:");
+    scanf("%d",&n);
     
+    pattern(n); 
     return 0;
 }
